@@ -138,6 +138,127 @@
 
         /*Кнопка теми*/
 
-        
+        .top {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .theme-button {
+            width: 48px;
+            height: 48px;
+
+            border: 1px solid var(--border);
+
+            border-radius: 16px;
+
+            background: var(--card);
+
+            color: var(--text);
+
+            backdrop-filter: blur(16px);
+
+            box-shadow: var(--shadow);
+
+            cursor: pointer;
+
+            font-size: 21px;
+
+            transition: 0.3s;
+        }
+
+        .theme-button:hover {
+            transform: 
+            rotate(12deg)
+            scale(1.08);
+        }
+
+        /*Header*/
+
+        header {
+            text-align: center;
+
+            padding: 38px 0 25px;
+
+            animation: appear 0.8s ease both;
+        }
+
+        /*Avatar*/
+
+        .avatar {
+            width: 105px;
+            height: 105px;
+
+            margin: 0 auto;
+
+            border-radius: 50%;
+
+            display: grid;
+            place-items: center;
+
+            color: white;
+
+            font-size: 31px;
+
+            font-weight: 800;
+
+            letter-spacing: -2px;
+
+            background: 
+                linear-gradient(135deg, var(--accent), var(--accent2));
+
+            box-shadow:
+                0 0 0 8px
+                rgba(109, 93, 252, 0.08),
+
+                0 18px 50px
+              rgba(109, 93, 252, 0.3);
+
+            animation: avatarAnimation 4s ease-in-out infinite;
+        }
+
+        @keyframes avatarAnimation {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        /*Name*/
+
+        h1 {
+            margin-top: 20px;
+
+            font-size: 42px;
+
+            letter-spacing: -2px;
+        }
+
+        /*Dscription*/
+
+        .descriprtion {
+            max-width: 500px;
+
+            margin:
+                8px auto
+                0;
+
+            color: var(--muted);
+
+            font-size: 16px;
+
+            line-height: 1.55;
+        }
+
+        /*Link*/
+
+        .links {
+            display: grid;
+
+            gap: 14px;
+        }
     </style>
 </head>
